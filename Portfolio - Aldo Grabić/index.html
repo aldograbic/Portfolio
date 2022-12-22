@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="logos/icons8-portfolio-16.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="script.js"></script>
+    <title>Portfolio - Aldo Grabić</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img class="signature_logo" src="logos/ag-high-resolution-logo-transparent-background.png"></a>
+        <nav class="navigation_pages">
+            <a id="red_color" href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="social_pages">
+            <a target="_blank" href="https://www.instagram.com/aldograbic/"><img src="logos/instagram-32.png"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/aldo-grabi%C4%87-30a325232/"><img src="logos/linkedin-32.png"></a>
+            <a target="_blank" href="https://github.com/aldograbic"><img src="logos/github-8-32.png"></a>
+        </div>
+        <div class="dark-mode_toggle">
+            <button onclick="lightDark_Mode()"><img src="logos/5402400_dark_mode_moon_night_forecast_icon.png"></button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home">
+            <div id="home_p_button">
+                <p>Hi,<br>I'm Aldo<br>Frontend Developer<p>
+                <button onclick="document.getElementById('contact').scrollIntoView();">Contact me</button>
+            </div>
+            <div id="self_picture">
+                <img src="self_picture/1665781469064-removebg-preview.png">
+            </div>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+        </section>
+        <section id="skills">
+            <h1>Skills</h1>
+        </section>
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+        </section>
+        <section id="contact">
+            <div id="contact_headline">
+                <h1>Contact me</h1>
+            </div>
+            <form id="contact_form" action="contact_form.php" method="post">
+                <p>by form:</p>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name .." required>
+                </div>
+                <div>
+                    <label for="surname">Surname:</label>
+                    <input type="text" name="surname" id="surname" placeholder="Enter your surname .." required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your e-mail .." required>
+                </div>
+                <div>
+                    <label for="textarea">Write a message:</label>
+                    <textarea id="textarea" placeholder="Enter your text here .." required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="contact_info">
+                <p>or by e-mail: <a href="mailto:aldo.grabic99@gmail.com">aldo.grabic99@gmail.com</a></p>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>

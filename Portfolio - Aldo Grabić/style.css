@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: rgb(49, 49, 49);
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: #F8F8F8;
+}
+
+.dark-light_mode {
+    background-color: rgb(49, 49, 49);
+    color: #F8F8F8;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color:#F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 1px dotted #dbdbdb;;
+    padding-top: 0.5vh;
+    z-index: 1;
+}
+
+#red_color {
+    color: #ED1703;
+}
+
+.signature_logo {
+    width: 3vw;
+    margin-left: 0.5vw;
+}
+
+nav {
+    display: flex;
+    font-size: 24px;
+    column-gap: 1vw;
+    margin-left: 52vw;
+    padding-right: 5vw;
+}
+
+nav a {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ED1703;
+    text-decoration: underline;
+}
+
+.social_pages {
+    display: flex;
+    column-gap: 0.5vw;
+    
+}
+
+.dark-mode_toggle button {
+    border-radius: 50px;
+    border: none;
+    background-color: #F8F8F8;
+    cursor: pointer;
+}
+
+#home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: translateY(30vh);
+
+}
+
+#home_p_button {
+    transform: translateY(-7.5vh);
+    margin-left: 30vw;
+}
+
+#home_p_button p {
+    font-size: 30px;
+}
+
+#home_p_button button {
+    font-size: 20px;
+    color: #F8F8F8;
+    width: 6vw;
+    height: 4vh;
+    margin-top: 4vh;
+    background-color: #ED1703;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 2.5px 2.5px 5px #ED1703;
+}
+
+#home_p_button button:hover {
+    color:rgb(49, 49, 49);
+}
+
+#home_p_button button:active {
+    transform: translateY(4px);
+}
+
+#self_picture img {
+    width: 17.5vw;
+    margin-right: 25vw;
+    border: 1px dashed #d3b6b3;
+    border-radius: 100px;
+    background-color: #e7695e;
+}
+
+#about {
+    transform: translateY(100vh);
+    display: flex;
+}
+
+#skills {
+    transform: translateY(200vh);
+    display: flex;
+}
+
+#portfolio {
+    transform: translateY(300vh);
+    display: flex;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30vw;
+    transform: translateY(400vh);
+}
+
+#contact_form {
+    display: flex;
+    width: 12vw;
+    flex-direction: column;
+    row-gap: 2vh;
+    transform: translateX(1.3vw);
+}
+
+textarea {
+    min-width: 10vw;
+    max-width: 10vw;
+    max-height: 9vh;
+    background-color: #F8F8F8;
+    border-radius: 6px;
+}
+
+#contact_form input {
+    font-family: 'Noto Sans Mono', monospace;
+    height: 3vh;
+    background-color: #F8F8F8;
+    border-radius: 6px;
+
+}
+
+#contact a {
+    color: #ED1703;
+}
